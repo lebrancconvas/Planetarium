@@ -4,8 +4,18 @@ import (
 	"fmt"
 )
 
+type Planet struct {
+	name string
+	size uint64 
+}
+
+type Program struct {
+	program_id uint32
+	name string
+	member uint32
+}
+
 func main() {
-	fmt.Println("Space Program 01");
-	defer fmt.Println("Space Program 02");
-	fmt.Println("Space Program 03"); //
+	earth := Planet{"Earth", 12742};
+	fmt.Println("Earth is a planet named", earth.name, "with a diameter of", earth.size, "km");
 }
