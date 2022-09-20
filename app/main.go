@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/lebrancconvas/Planetarium/shape"
 )
 
 type Planet struct {
@@ -16,6 +17,6 @@ type Program struct {
 }
 
 func main() {
-	earth := Planet{"Earth", 12742};
-	fmt.Println("Earth is a planet named", earth.name, "with a diameter of", earth.size, "km");
+	program01 := shape.Circle{Radius: 10};
+	fmt.Println(program01.Circumstance());
 }
